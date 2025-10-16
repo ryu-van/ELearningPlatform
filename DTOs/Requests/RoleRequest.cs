@@ -8,6 +8,8 @@
 
         public bool IsActive { get; set; } = true;
 
+        public List<long> FeatureIds { get; set; } = new();
+
 
     }
 }

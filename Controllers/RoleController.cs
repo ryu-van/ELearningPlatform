@@ -56,5 +56,18 @@ namespace E_learning_platform.Controllers
             await roleService.DeleteRoleAsync(id);
             return new OkResult();
         }
+
+        [HttpGet("features")]
+        public async Task<IActionResult> GetAllFeatures()
+        {
+            var features = await roleService.GetAllFeaturesAsync();
+            return new OkObjectResult(features);
+        }
+        [HttpPut("features/{id}/disable")]
+        public async Task<IActionResult> DisableFeature(long id)
+        {
+            await roleService.DisableFeature(id);
+            return new OkResult();
+        }
     }
 }

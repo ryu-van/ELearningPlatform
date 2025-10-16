@@ -5,10 +5,14 @@ namespace E_learning_platform.Repositories
 {
     public interface IRoleRepository
     {
-        Task<List<Role>> GetAllRolesAsync();
+        Task<IEnumerable<Role>> GetAllAsync();
         Task<Role?> GetRoleByIdAsync(long id);
         Task CreateRoleAsync(RoleRequest roleRequest);
         Task UpdateRoleAsync(long id, RoleRequest roleRequest);
         Task DeleteRoleAsync(long id);
+
+        Task disableRoleAsync(long id);
+
+
     }
 }
