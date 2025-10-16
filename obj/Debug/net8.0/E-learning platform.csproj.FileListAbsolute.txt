@@ -1,0 +1,173 @@
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\E-learning platform.csproj.AssemblyReference.cache
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\rpswa.dswa.cache.json
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\E-learning platform.GeneratedMSBuildEditorConfig.editorconfig
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\E-learning platform.AssemblyInfoInputs.cache
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\E-learning platform.AssemblyInfo.cs
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\E-learning platform.csproj.CoreCompileInputs.cache
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\E-learning platform.MvcApplicationPartsAssemblyInfo.cs
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\E-learning platform.MvcApplicationPartsAssemblyInfo.cache
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\appsettings.Development.json
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\appsettings.json
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\E-learning platform.staticwebassets.endpoints.json
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\E-learning platform.exe
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\E-learning platform.deps.json
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\E-learning platform.runtimeconfig.json
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\E-learning platform.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\E-learning platform.pdb
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Azure.Core.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Azure.Identity.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Humanizer.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.OpenApi.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Mono.TextTemplating.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.ClientModel.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.CodeDom.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Composition.Convention.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Composition.Hosting.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Composition.Runtime.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Composition.TypedParts.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Drawing.Common.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Formats.Asn1.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.IO.Pipelines.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Memory.Data.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Runtime.Caching.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Security.Permissions.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Text.Json.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\System.Windows.Extensions.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\rjimswa.dswa.cache.json
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\scopedcss\bundle\E-learning platform.styles.css
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\staticwebassets.build.json
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\staticwebassets.build.json.cache
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\staticwebassets.development.json
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\E-learni.C858F59E.Up2Date
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\E-learning platform.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\refint\E-learning platform.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\E-learning platform.pdb
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\E-learning platform.genruntimeconfig.cache
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\ref\E-learning platform.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\AutoMapper.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
