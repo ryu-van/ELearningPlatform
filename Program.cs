@@ -22,9 +22,12 @@ builder.Services.AddSwaggerGen();
 // Repository Layer
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+
 
 // Service Layer
-builder.Services.AddScoped<RoleService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
+
 builder.Services.AddScoped<UserService>();
 
 // Auto Mapper Configurations

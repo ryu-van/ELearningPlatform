@@ -1,4 +1,4 @@
-﻿namespace E_learning_platform.Dto.Requests
+﻿namespace E_learning_platform.DTOs.Requests
 {
     public class RoleRequest
     {

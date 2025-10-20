@@ -1,7 +1,7 @@
 ﻿using E_learning_platform.Data;
 using E_learning_platform.Models;
 using Microsoft.EntityFrameworkCore;
-using E_learning_platform.Dto.Requests;
+using E_learning_platform.DTOs.Requests;
 namespace E_learning_platform.Repositories
 {
     public class RoleRepository : IRoleRepository
@@ -28,7 +28,7 @@ namespace E_learning_platform.Repositories
                 .FirstOrDefaultAsync(r => r.Id == id);
         }
 
-        public async Task CreateRoleAsync(RoleRequest roleRequest)
+        public async Task<Role> CreateRoleAsync(RoleRequest roleRequest)
         {
             var newRole = new Role
             {
@@ -47,9 +47,10 @@ namespace E_learning_platform.Repositories
 
             applicationDbContext.Roles.Add(newRole);
             await applicationDbContext.SaveChangesAsync();
+            return newRole;
         }
 
-        public async Task UpdateRoleAsync(long roleId, RoleRequest roleRequest)
+        public async Task<Role> UpdateRoleAsync(long roleId, RoleRequest roleRequest)
         {
             var existingRole = await applicationDbContext.Roles.Include(r=> r.RolePermissions).FirstOrDefaultAsync(r=> r.Id == roleId);
             if (existingRole == null)
@@ -65,16 +66,20 @@ namespace E_learning_platform.Repositories
             var toAdd = newFeatureIds.Where(id => !currentFeatureIds.Contains(id)).Select(id=> new RolePermission { RoleId = roleId,FeatureId = id, IsEnabled = true}).ToList();
             applicationDbContext.AddRange(toAdd);
             await applicationDbContext.SaveChangesAsync();
+            return existingRole;
+
         }
 
-        public async Task DeleteRoleAsync(long id)
+        public async Task<bool> DeleteRoleAsync(long id)
         {
             var role = await applicationDbContext.Roles.FindAsync(id);
-            if (role != null)
-            {
+            if (role != null) { 
+                return false;
+            }
+            
                 applicationDbContext.Roles.Remove(role);
                 await applicationDbContext.SaveChangesAsync();
-            }
+            return true;
         }
 
         public async Task disableRoleAsync(long id)

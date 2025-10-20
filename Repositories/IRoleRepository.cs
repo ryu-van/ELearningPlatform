@@ -1,5 +1,5 @@
 ﻿using E_learning_platform.Models;
-using E_learning_platform.Dto.Requests;
+using E_learning_platform.DTOs.Requests;
 
 namespace E_learning_platform.Repositories
 {
@@ -7,9 +7,9 @@ namespace E_learning_platform.Repositories
     {
         Task<IEnumerable<Role>> GetAllAsync();
         Task<Role?> GetRoleByIdAsync(long id);
-        Task CreateRoleAsync(RoleRequest roleRequest);
-        Task UpdateRoleAsync(long id, RoleRequest roleRequest);
-        Task DeleteRoleAsync(long id);
+        Task<Role> CreateRoleAsync(RoleRequest roleRequest);
+        Task<Role> UpdateRoleAsync(long id, RoleRequest roleRequest);
+        Task<bool> DeleteRoleAsync(long id);
 
         Task disableRoleAsync(long id);
 

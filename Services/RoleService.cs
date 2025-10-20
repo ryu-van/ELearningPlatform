@@ -1,52 +1,67 @@
 ﻿using AutoMapper;
-using E_learning_platform.Dto.Requests;
+using E_learning_platform.DTOs.Requests;
 using E_learning_platform.DTOs.Responses;
 using E_learning_platform.Models;
 using E_learning_platform.Repositories;
+
 namespace E_learning_platform.Services
 {
-    public class RoleService
+    public class RoleService : IRoleService
     {
         private readonly IRoleRepository roleRepository;
-        private readonly FeatureRepository featureRepository;
+        private readonly IFeatureRepository featureRepository;
         private readonly IMapper mapper;
 
-        public RoleService(IRoleRepository roleRepository,FeatureRepository featureRepository, IMapper mapper)
+        public RoleService(IRoleRepository roleRepository, IFeatureRepository featureRepository, IMapper mapper)
         {
             this.roleRepository = roleRepository;
             this.featureRepository = featureRepository;
             this.mapper = mapper;
         }
+
         public async Task<IEnumerable<RoleResponse>> GetAllRolesAsync()
         {
             var roles = await roleRepository.GetAllAsync();
             return mapper.Map<IEnumerable<RoleResponse>>(roles);
         }
+
         public async Task<RoleResponse?> GetRoleByIdAsync(long id)
         {
-            var role = roleRepository.GetRoleByIdAsync(id);
+            var role = await roleRepository.GetRoleByIdAsync(id);
             return role == null ? null : mapper.Map<RoleResponse>(role);
         }
-        public Task CreateRoleAsync(RoleRequest roleRequest)
+
+        public async Task<RoleResponse> CreateRoleAsync(RoleRequest roleRequest)
         {
-            return roleRepository.CreateRoleAsync(roleRequest);
+            Role createdRole = await roleRepository.CreateRoleAsync(roleRequest);
+            return mapper.Map<RoleResponse>(createdRole);
         }
-        public Task UpdateRoleAsync(long id, RoleRequest roleRequest)
+
+        public async Task<RoleResponse?> UpdateRoleAsync(long id, RoleRequest roleRequest)
         {
-            return roleRepository.UpdateRoleAsync(id, roleRequest);
+            var updatedRole = await roleRepository.UpdateRoleAsync(id, roleRequest);
+            return updatedRole == null ? null : mapper.Map<RoleResponse>(updatedRole);
         }
-        public Task DeleteRoleAsync(long id)
+
+        public async Task<bool> DeleteRoleAsync(long id)
         {
-            return roleRepository.DeleteRoleAsync(id);
+            var RoleExists = await roleRepository.GetRoleByIdAsync(id);
+            if (RoleExists == null)
+            {
+                return false;
+            }
+            return await roleRepository.DeleteRoleAsync(id);
         }
+
         public async Task<IEnumerable<FeatureResponse>> GetAllFeaturesAsync()
         {
             var features = await featureRepository.GetAllAsync();
             return mapper.Map<IEnumerable<FeatureResponse>>(features);
         }
-        public Task DisableFeature(long id)
+
+        public async Task<bool> ChangeFeatureAsync(long id, bool status)
         {
-            return featureRepository.disableFeature(id);
+            return await featureRepository.changeStatusFeature(id, status);
         }
     }
 }
