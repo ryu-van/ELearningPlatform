@@ -33,6 +33,10 @@ namespace E_learning_platform.Services
 
         public async Task<RoleResponse> CreateRoleAsync(RoleRequest roleRequest)
         {
+            if (string.IsNullOrWhiteSpace(roleRequest.Name))
+            {
+                throw new ArgumentException("Role name is required", nameof(roleRequest.Name));
+            }
             Role createdRole = await roleRepository.CreateRoleAsync(roleRequest);
             return mapper.Map<RoleResponse>(createdRole);
         }
@@ -63,5 +67,6 @@ namespace E_learning_platform.Services
         {
             return await featureRepository.changeStatusFeature(id, status);
         }
+       
     }
 }

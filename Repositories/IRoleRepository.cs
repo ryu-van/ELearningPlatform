@@ -11,7 +11,7 @@ namespace E_learning_platform.Repositories
         Task<Role> UpdateRoleAsync(long id, RoleRequest roleRequest);
         Task<bool> DeleteRoleAsync(long id);
 
-        Task disableRoleAsync(long id);
+        Task changeRoleAsync(long id, bool status);
 
 
     }

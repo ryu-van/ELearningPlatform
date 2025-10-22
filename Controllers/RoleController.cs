@@ -16,9 +16,7 @@ namespace E_learning_platform.Controllers
             _roleService = roleService;
         }
 
-        /// <summary>
-        /// Lấy danh sách tất cả roles
-        /// </summary>
+       
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<RoleResponse>>> GetAllRoles()
@@ -27,9 +25,7 @@ namespace E_learning_platform.Controllers
             return Ok(roles);
         }
 
-        /// <summary>
-        /// Lấy thông tin role theo ID
-        /// </summary>
+       
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -45,9 +41,7 @@ namespace E_learning_platform.Controllers
             return Ok(role);
         }
 
-        /// <summary>
-        /// Tạo role mới
-        /// </summary>
+        
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -67,9 +61,7 @@ namespace E_learning_platform.Controllers
             );
         }
 
-        /// <summary>
-        /// Cập nhật thông tin role
-        /// </summary>
+       
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -91,9 +83,7 @@ namespace E_learning_platform.Controllers
             return Ok(updatedRole);
         }
 
-        /// <summary>
-        /// Xóa role
-        /// </summary>
+        
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -109,9 +99,7 @@ namespace E_learning_platform.Controllers
             return NoContent();
         }
 
-        /// <summary>
-        /// Lấy danh sách tất cả features
-        /// </summary>
+       
         [HttpGet("features")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<FeatureResponse>>> GetAllFeatures()

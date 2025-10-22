@@ -21,13 +21,12 @@ namespace E_learning_platform.Exceptions
             {
                 await _next(context);
             }
-            catch (Exception ex)  // Bắt Exception chung
+            catch (Exception ex)   
             {
-                await HandleExceptionAsync(context, ex);  // Truyền Exception vào
+                await HandleExceptionAsync(context, ex); 
             }
         }
 
-        // Đổi parameter từ BaseException -> Exception
         private async Task HandleExceptionAsync(HttpContext context, Exception exception)
         {
             context.Response.ContentType = "application/json";
@@ -40,6 +39,16 @@ namespace E_learning_platform.Exceptions
 
             switch (exception)
             {
+                case EntityNotFoundException entityNotFound:
+                    context.Response.StatusCode = StatusCodes.Status404NotFound;
+                    response.StatusCode = StatusCodes.Status404NotFound;
+                    response.Details = new
+                    {
+                        entityNotFound.EntityName,
+                        entityNotFound.InvalidIds
+                    };
+                    _logger.LogWarning(entityNotFound, "Entity not found: {EntityName}", entityNotFound.EntityName);
+                    break;
                 case BaseException baseEx:
                     context.Response.StatusCode = baseEx.StatusCode;
                     response.StatusCode = baseEx.StatusCode;
@@ -81,5 +90,7 @@ namespace E_learning_platform.Exceptions
         public int StatusCode { get; set; }
         public string Message { get; set; } = string.Empty;
         public DateTime Timestamp { get; set; }
+
+        public object? Details { get; set; }
     }
 }
