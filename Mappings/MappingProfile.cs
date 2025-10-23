@@ -16,6 +16,15 @@ namespace E_learning_platform.Mappings
                 .ForMember(dest => dest.IsEnabled, opt => opt.MapFrom(sc => sc.IsEnabled));
             CreateMap<Role, RoleResponse>()
                 .ForMember(dest => dest.Features, opt => opt.MapFrom(sc => sc.RolePermissions));
+            CreateMap<Branch, BranchResponse>()
+                .ForMember(debt => debt.Id, opt => opt.MapFrom(sc => sc.Id))
+                .ForMember(debt => debt.Code, opt => opt.MapFrom(sc => sc.Code))
+                .ForMember(debt => debt.Name, opt => opt.MapFrom(sc => sc.Name))
+                .ForMember(debt => debt.Address, opt => opt.MapFrom(sc => sc.Address))
+                .ForMember(debt => debt.City, opt => opt.MapFrom(sc => sc.City))
+                .ForMember(debt => debt.Province, opt => opt.MapFrom(sc => sc.Province))
+                .ForMember(debt => debt.PhoneNumber, opt => opt.MapFrom(sc => sc.PhoneNumber))
+                .ForMember(debt => debt.IsActive, opt => opt.MapFrom(sc => sc.IsActive));
         }
     }
 }

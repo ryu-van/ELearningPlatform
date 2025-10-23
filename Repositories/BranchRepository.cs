@@ -17,7 +17,7 @@ namespace E_learning_platform.Repositories
             _context = context;
         }
 
-        public async Task ChangeStatus(long branchId, bool status)
+        public async Task<bool> ChangeStatus(long branchId, bool status)
         {
             var existingBranch = await _context.Branches
                 .Where(b => b.Id == branchId)
@@ -26,11 +26,13 @@ namespace E_learning_platform.Repositories
             if (existingBranch == null)
             {
                 throw new EntityNotFoundException("Branch", new[] { branchId });
+                return false;
 
             }
             existingBranch.IsActive = status;
 
             await _context.SaveChangesAsync();
+            return true;
         }
 
         public async Task<Branch> CreateBranchAsync(BranchRequest request)

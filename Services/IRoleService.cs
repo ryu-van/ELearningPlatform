@@ -10,6 +10,7 @@ namespace E_learning_platform.Services
         Task<RoleResponse> CreateRoleAsync(RoleRequest roleRequest);
         Task<RoleResponse?> UpdateRoleAsync(long id, RoleRequest roleRequest);
         Task<bool> DeleteRoleAsync(long id);
+        Task<bool> changeRoleStatus(long id, bool status);
         Task<IEnumerable<FeatureResponse>> GetAllFeaturesAsync();
         Task<bool> ChangeFeatureAsync(long id, bool status);
     }

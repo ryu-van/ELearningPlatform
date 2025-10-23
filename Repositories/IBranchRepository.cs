@@ -12,7 +12,7 @@ namespace E_learning_platform.Repositories
         Task<Branch> UpdateBranchAsync(long branchId, BranchRequest request);
         Task<bool> DeleteBranchAsync(long branchId);
 
-        Task ChangeStatus(long branchId,bool status);
+        Task<bool> ChangeStatus(long branchId,bool status);
 
 
        

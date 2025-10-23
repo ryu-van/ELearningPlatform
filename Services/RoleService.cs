@@ -67,6 +67,11 @@ namespace E_learning_platform.Services
         {
             return await featureRepository.changeStatusFeature(id, status);
         }
-       
+
+        public async Task<bool> changeRoleStatus(long id, bool status)
+        {
+          return await roleRepository.changeRoleAsync(id, status);
+
+        }
     }
 }

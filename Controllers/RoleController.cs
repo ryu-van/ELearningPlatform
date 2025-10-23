@@ -99,7 +99,23 @@ namespace E_learning_platform.Controllers
             return NoContent();
         }
 
-       
+        [HttpPut("{id}/status")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> ChangeRoleStatus(long id, [FromQuery] bool isActive)
+        {
+            bool result = await _roleService.changeRoleStatus(id, isActive);
+            if (!result)
+            {
+                return NotFound(new { message = $"Role với ID {id} không tồn tại" });
+            }
+
+            string statusText = isActive ? "kích hoạt" : "vô hiệu hóa";
+            return Ok(new { message = $"Role đã được {statusText}" });
+        }
+
+
+
         [HttpGet("features")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<FeatureResponse>>> GetAllFeatures()

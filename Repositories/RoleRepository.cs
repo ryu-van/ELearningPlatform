@@ -91,18 +91,19 @@ namespace E_learning_platform.Repositories
             return true;
         }
 
-        public async Task changeRoleAsync(long id, bool status)
+       
+
+        public async Task<bool> changeRoleAsync(long id, bool status)
         {
             var role = await _context.Roles.FindAsync(id);
-            if (role != null)
+            if (role == null)
             {
-                role.IsActive = status;
-                await _context.SaveChangesAsync();
+                return false;
             }
+
+            role.IsActive = status;
+            await _context.SaveChangesAsync();
+            return true;
         }
-
-
-
-
     }
 }
