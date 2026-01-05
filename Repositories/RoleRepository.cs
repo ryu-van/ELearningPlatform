@@ -1,4 +1,4 @@
-﻿using E_learning_platform.Data;
+using E_learning_platform.Data;
 using E_learning_platform.DTOs.Requests;
 using E_learning_platform.Exceptions;
 using E_learning_platform.Models;
@@ -82,12 +82,12 @@ namespace E_learning_platform.Repositories
         public async Task<bool> DeleteRoleAsync(long id)
         {
             var role = await _context.Roles.FindAsync(id);
-            if (role != null) { 
+            if (role == null) 
+            { 
                 return false;
             }
-
             _context.Roles.Remove(role);
-                await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             return true;
         }
 

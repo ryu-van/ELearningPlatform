@@ -18,6 +18,7 @@ namespace E_learning_platform.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Branch> Branches { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
+        public DbSet<EmailVerificationToken> EmailVerificationTokens { get; set; }
 
         // === PERMISSIONS & FEATURES ===
         public DbSet<Feature> Features { get; set; }
@@ -112,6 +113,18 @@ namespace E_learning_platform.Data
                 .WithMany()
                 .HasForeignKey(u => u.BranchId)
                 .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity<RefreshToken>()
+                .HasOne<User>()
+                .WithMany(u => u.RefreshTokens)
+                .HasForeignKey(rt => rt.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<EmailVerificationToken>()
+                .HasOne<User>()
+                .WithMany()
+                .HasForeignKey(ev => ev.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             // === COURSES ===
             modelBuilder.Entity<Course>()

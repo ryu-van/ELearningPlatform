@@ -11,14 +11,12 @@ namespace E_learning_platform.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
 
-        // === Người nhận thông báo ===
         [Required]
         public long UserId { get; set; }
 
         [ForeignKey(nameof(UserId))]
         public User? User { get; set; }
 
-        // === Nội dung thông báo ===
         [Required]
         [MaxLength(255)]
         public string Title { get; set; } = string.Empty;

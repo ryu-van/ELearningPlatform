@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceFolder}/E-learning platform.csproj",
+        "-c",
+        "Debug"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "build"
+    },
+    {
+      "label": "publish",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "publish",
+        "${workspaceFolder}/E-learning platform.csproj",
+        "-c",
+        "Release",
+        "-o",
+        "${workspaceFolder}/bin/Publish"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "watch",
+      "type": "shell",
+      "command": "dotnet watch run --project \"${workspaceFolder}/E-learning platform.csproj\"",
+      "isBackground": true
+    }
+  ]
+}

@@ -1,12 +1,14 @@
-﻿using E_learning_platform.DTOs.Responses;
+using E_learning_platform.DTOs.Responses;
 using E_learning_platform.Services;
 using Microsoft.AspNetCore.Mvc;
 using E_learning_platform.DTOs.Requests;
+using Microsoft.AspNetCore.Authorization;
 
 namespace E_learning_platform.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize(Policy = "RequireAdmin")]
     public class RoleController : ControllerBase
     {
         private readonly IRoleService _roleService;

@@ -24,6 +24,12 @@ namespace E_learning_platform.Models
 
         public long LessonId { get; set; }
         [ForeignKey("LessonId")]
+        
         public Lesson? Lesson { get; set; }
+
+        public LessonProgress()
+        {
+            
+        }
     }
 }

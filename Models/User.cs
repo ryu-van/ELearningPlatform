@@ -1,10 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace E_learning_platform.Models
 {
 
-    [Table("User")]
+    [Table("Users")]
     public class User
     {
         [Key]
@@ -45,7 +45,7 @@ namespace E_learning_platform.Models
         public string province { get; set; } = string.Empty;
 
 
-        public long RoleId { get; set; }
+        public long? RoleId { get; set; }
         [ForeignKey("RoleId")]
         public Role? Role { get; set; }
 
@@ -53,7 +53,7 @@ namespace E_learning_platform.Models
 
         public ICollection<Post> posts { get; set; } = new List<Post>();
 
-        public long BranchId { get; set; }
+        public long? BranchId { get; set; }
         [ForeignKey("BranchId")]
         public Branch? Branch { get; set; }
 

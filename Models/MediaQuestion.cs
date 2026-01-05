@@ -10,7 +10,7 @@ namespace E_learning_platform.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
 
-        public string? MediaType { get; set; } // e.g., "image", "video", "audio"
+        public string? MediaType { get; set; }
 
         public string? MediaUrl { get; set; }
 

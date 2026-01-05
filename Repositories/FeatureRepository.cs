@@ -1,4 +1,4 @@
-﻿using E_learning_platform.Data;
+using E_learning_platform.Data;
 using E_learning_platform.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,6 +7,11 @@ namespace E_learning_platform.Repositories
     public class FeatureRepository : IFeatureRepository
     {
         private readonly ApplicationDbContext applicationDbContext;
+
+        public FeatureRepository(ApplicationDbContext applicationDbContext)
+        {
+            this.applicationDbContext = applicationDbContext;
+        }
 
         public async Task<bool> changeStatusFeature(long id, bool status)
         {

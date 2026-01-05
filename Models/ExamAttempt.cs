@@ -31,12 +31,12 @@ namespace E_learning_platform.Models
 
         [Column("Percentage", TypeName = "decimal(5,2)")]
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
-        public decimal PercentageScore { get; private set; }  // readonly in EF
+        public decimal PercentageScore { get; private set; } 
 
         public bool IsPassed { get; set; } = false;
 
         [MaxLength(20)]
-        public string Status { get; set; } = "InProgress"; // default like SQL
+        public string Status { get; set; } = "InProgress"; 
 
         [Required]
         public long ExamId { get; set; }

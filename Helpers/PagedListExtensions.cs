@@ -1,4 +1,4 @@
-﻿using E_learning_platform.DTOs.Responses
+using E_learning_platform.DTOs.Responses;
 
 using Microsoft.EntityFrameworkCore;
 

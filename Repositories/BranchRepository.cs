@@ -1,4 +1,4 @@
-﻿using E_learning_platform.Data;
+using E_learning_platform.Data;
 using E_learning_platform.DTOs.Requests;
 using E_learning_platform.DTOs.Responses;
 using E_learning_platform.Exceptions;
@@ -26,8 +26,6 @@ namespace E_learning_platform.Repositories
             if (existingBranch == null)
             {
                 throw new EntityNotFoundException("Branch", new[] { branchId });
-                return false;
-
             }
             existingBranch.IsActive = status;
 

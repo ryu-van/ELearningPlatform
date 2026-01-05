@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace E_learning_platform.Models
@@ -21,8 +21,11 @@ namespace E_learning_platform.Models
 
         public string? ReplacedByToken { get; set; }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
-        public bool IsActive { get; private set; }
+        public long UserId { get; set; }
+        [ForeignKey(nameof(UserId))]
+        public User? User { get; set; }
+
+        public bool IsActive => RevokedAt == null && ExpiresAt > DateTime.UtcNow;
 
 
       

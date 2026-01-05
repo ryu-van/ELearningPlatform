@@ -162,7 +162,6 @@ I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8
 I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\staticwebassets.build.json.cache
 I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\staticwebassets.development.json
 I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\E-learni.C858F59E.Up2Date
 I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\E-learning platform.dll
 I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\refint\E-learning platform.dll
@@ -172,3 +171,9 @@ I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8
 I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\AutoMapper.dll
 I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\obj\Debug\net8.0\E-learning platform.sourcelink.json
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\FluentValidation.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\CloudinaryDotNet.dll
+I:\tai nguyen\C# Tutorial\E-learning platform\E-learning platform\bin\Debug\net8.0\Newtonsoft.Json.dll

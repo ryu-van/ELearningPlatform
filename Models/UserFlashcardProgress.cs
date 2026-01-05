@@ -11,7 +11,6 @@ namespace E_learning_platform.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
 
-        // === Liên kết ===
         [Required]
         public long UserId { get; set; }
         [ForeignKey(nameof(UserId))]
@@ -22,11 +21,10 @@ namespace E_learning_platform.Models
         [ForeignKey(nameof(CardId))]
         public VocabularyCard? Card { get; set; }
 
-        // === Tiến trình học ===
         public bool IsKnown { get; set; } = false;
 
         [MaxLength(20)]
-        public string? Confidence { get; set; } // Again / Hard / Good / Easy
+        public string? Confidence { get; set; } 
 
         public DateTime LastReviewed { get; set; } = DateTime.UtcNow;
 
@@ -40,7 +38,7 @@ namespace E_learning_platform.Models
 
         [Column(TypeName = "decimal(4,2)")]
         [Range(1.3, 5.0)]
-        public decimal EaseFactor { get; set; } = 2.5m; // SM-2 default
+        public decimal EaseFactor { get; set; } = 2.5m; 
 
         [Range(0, int.MaxValue)]
         public int IntervalDays { get; set; } = 1;
