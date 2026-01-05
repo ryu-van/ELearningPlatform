@@ -4,7 +4,7 @@ namespace E_learning_platform.Services
 {
     public interface ILanguageService
     {
-        Task<PagedResponse<LanguageResponse>> GetPagedAsync(string keyword, bool? isActive, int page, int pageSize);
+        Task<PagedResponse<LanguageResponse>> GetPagedAsync(string? keyword, bool? isActive, int page, int pageSize);
         Task<LanguageResponse> GetByIdAsync(long id);
         Task<LanguageResponse> CreateAsync(LanguageRequest request);
         Task<LanguageResponse> UpdateAsync(long id, LanguageRequest request);

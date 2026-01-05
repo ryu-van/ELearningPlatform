@@ -1,4 +1,4 @@
-﻿using E_learning_platform.DTOs.Requests;
+using E_learning_platform.DTOs.Requests;
 using E_learning_platform.DTOs.Responses;
 using E_learning_platform.Models;
 
@@ -6,7 +6,7 @@ namespace E_learning_platform.Services
 {
     public interface IBranchService
     {
-        Task<PagedResponse<BranchResponse>> GetPageOfBranchAsync(string keyword, bool? isActive, int page, int pageSize);
+        Task<PagedResponse<BranchResponse>> GetPageOfBranchAsync(string? keyword, bool? isActive, int page, int pageSize);
         Task<BranchResponse> GetBranchById(long branchId);
 
         Task<BranchResponse> CreateNewBranchAsync(BranchRequest request);

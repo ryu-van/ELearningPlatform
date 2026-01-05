@@ -15,7 +15,7 @@ namespace E_learning_platform.Services
             _mapper = mapper;
         }
 
-        public async Task<PagedResponse<UserResponse>> GetPagedUsersAsync(string keyword, bool? isActive, int page, int pageSize)
+        public async Task<PagedResponse<UserResponse>> GetPagedUsersAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
             var pagedUsers = await _repo.GetPagedUsersAsync(keyword, isActive, page, pageSize);
             var mapped = _mapper.Map<IEnumerable<UserResponse>>(pagedUsers.Data);

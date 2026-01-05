@@ -5,7 +5,7 @@ namespace E_learning_platform.DTOs.Requests
     public class ChapterRequest
     {
         [Required]
-        public string Title { get; set; }
+        public string Title { get; set; } = string.Empty;
 
         public int OrderNo { get; set; }
 

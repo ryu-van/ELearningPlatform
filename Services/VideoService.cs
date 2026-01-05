@@ -48,7 +48,7 @@ namespace E_learning_platform.Services
             return await _videoRepository.DeleteVideoAsync(videoId);
         }
 
-        public async Task<PagedResponse<VideoResponse>> GetPagedVideosAsync(string keyword, bool? isActive, int page, int pageSize)
+        public async Task<PagedResponse<VideoResponse>> GetPagedVideosAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
             var pagedVideos = await _videoRepository.GetPagedVideosAsync(keyword, isActive, page, pageSize);
             

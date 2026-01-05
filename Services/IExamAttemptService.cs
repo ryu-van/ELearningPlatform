@@ -10,5 +10,7 @@ namespace E_learning_platform.Services
         Task<ExamAttemptResponse> FinishAttemptAsync(long userId, long attemptId);
         Task<IEnumerable<ExamAttemptResponse>> GetMyAttemptsAsync(long userId, long? examId);
         Task<IEnumerable<UserAnswerResponse>> GetAttemptAnswersAsync(long userId, long attemptId);
+        
+        Task<bool> GradeEssayQuestionAsync(long graderId, GradeEssayRequest request);
     }
 }

@@ -12,5 +12,8 @@ namespace E_learning_platform.Repositories
         Task<UserAnswer> SubmitAnswerAsync(UserAnswer answer);
         Task<IEnumerable<UserAnswer>> GetAnswersByAttemptAsync(long attemptId);
         Task<decimal> GetMaxScoreForExamAsync(long examId);
+        
+        Task<bool> GradeAnswerAsync(long attemptId, long questionId, decimal score, bool isCorrect, long graderId);
+        Task<bool> UpdateAttemptTotalScoreAsync(long attemptId);
     }
 }

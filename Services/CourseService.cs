@@ -45,7 +45,7 @@ namespace E_learning_platform.Services
             return _mapper.Map<CourseResponse>(course);
         }
 
-        public async Task<PagedResponse<CourseResponse>> GetPagedCoursesAsync(string keyword, bool? isActive, int page, int pageSize)
+        public async Task<PagedResponse<CourseResponse>> GetPagedCoursesAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
             var pagedCourses = await _courseRepository.GetPagedCoursesAsync(keyword, isActive, page, pageSize);
             

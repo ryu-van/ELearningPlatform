@@ -5,7 +5,7 @@ namespace E_learning_platform.Repositories
 {
     public interface ILevelRepository
     {
-        Task<PagedResponse<Level>> GetPagedAsync(string keyword, bool? isActive, int page, int pageSize);
+        Task<PagedResponse<Level>> GetPagedAsync(string? keyword, bool? isActive, int page, int pageSize);
         Task<Level> GetByIdAsync(long id);
         Task<Level> CreateAsync(LevelRequest request);
         Task<Level> UpdateAsync(long id, LevelRequest request);

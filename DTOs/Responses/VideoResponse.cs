@@ -3,10 +3,10 @@ namespace E_learning_platform.DTOs.Responses
     public class VideoResponse
     {
         public long Id { get; set; }
-        public string Title { get; set; }
+        public string Title { get; set; } = string.Empty;
         public string? Description { get; set; }
         public string? Type { get; set; }
-        public string Url { get; set; }
+        public string Url { get; set; } = string.Empty;
         public int? Duration { get; set; }
         public long? FileSize { get; set; }
         public string? Resolution { get; set; }

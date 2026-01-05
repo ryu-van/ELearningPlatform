@@ -6,7 +6,7 @@ namespace E_learning_platform.Repositories
 {
     public interface ICourseRepository
     {
-        Task<PagedResponse<Course>> GetPagedCoursesAsync(string keyword, bool? isActive, int page, int pageSize);
+        Task<PagedResponse<Course>> GetPagedCoursesAsync(string? keyword, bool? isActive, int page, int pageSize);
         Task<Course> GetCourseByIdAsync(long courseId);
         Task<Course> CreateCourseAsync(CourseRequest request);
         Task<Course> UpdateCourseAsync(long courseId, CourseRequest request);

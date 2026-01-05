@@ -44,7 +44,7 @@ namespace E_learning_platform.Services
             return _mapper.Map<IEnumerable<LessonResponse>>(lessons);
         }
 
-        public async Task<PagedResponse<LessonResponse>> GetPagedLessonsAsync(string keyword, bool? isActive, int page, int pageSize)
+        public async Task<PagedResponse<LessonResponse>> GetPagedLessonsAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
             var pagedLessons = await _lessonRepository.GetPagedLessonsAsync(keyword, isActive, page, pageSize);
             

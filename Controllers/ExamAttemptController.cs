@@ -20,6 +20,19 @@ namespace E_learning_platform.Controllers
             _attemptService = attemptService;
         }
 
+        [HttpPost("grade")]
+        [Authorize(Roles = "Admin,Teacher")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        public async Task<IActionResult> GradeEssay([FromBody] GradeEssayRequest request)
+        {
+            if (!TryGetUserId(out long graderId)) return Unauthorized();
+            
+            await _attemptService.GradeEssayQuestionAsync(graderId, request);
+            return Ok(new { message = "Đã chấm điểm thành công" });
+        }
+
         [HttpPost("start")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]

@@ -6,7 +6,7 @@ namespace E_learning_platform.Repositories
 {
     public interface IQuestionRepository
     {
-        Task<PagedResponse<Question>> GetPagedQuestionsAsync(string keyword, bool? isActive, int page, int pageSize);
+        Task<PagedResponse<Question>> GetPagedQuestionsAsync(string? keyword, bool? isActive, int page, int pageSize);
         Task<IEnumerable<Question>> GetQuestionsBySectionIdAsync(long sectionId);
         Task<Question> GetQuestionByIdAsync(long questionId);
         Task<bool> IsOptionCorrectAsync(long questionId, long optionId);

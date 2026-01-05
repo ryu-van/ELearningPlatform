@@ -6,7 +6,7 @@ namespace E_learning_platform.Repositories
 {
     public interface IExamRepository
     {
-        Task<PagedResponse<Exam>> GetPagedExamsAsync(string keyword, bool? isActive, int page, int pageSize);
+        Task<PagedResponse<Exam>> GetPagedExamsAsync(string? keyword, bool? isActive, int page, int pageSize);
         Task<Exam> GetExamByIdAsync(long examId);
         Task<Exam> CreateExamAsync(ExamRequest request);
         Task<Exam> UpdateExamAsync(long examId, ExamRequest request);

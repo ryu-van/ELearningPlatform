@@ -42,12 +42,12 @@ namespace E_learning_platform.Repositories
             if (entity == null) throw new EntityNotFoundException("Level", new[] { id });
             return entity;
         }
-        public async Task<PagedResponse<Level>> GetPagedAsync(string keyword, bool? isActive, int page, int pageSize)
+        public async Task<PagedResponse<Level>> GetPagedAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
             var query = _context.Levels.AsQueryable();
             if (!string.IsNullOrWhiteSpace(keyword))
             {
-                query = query.Where(x => EF.Functions.Like(x.Name, $"%{keyword}%"));
+                query = query.Where(l => (l.Name != null && l.Name.Contains(keyword)) || (l.Description != null && l.Description.Contains(keyword)));
             }
             if (isActive.HasValue)
             {

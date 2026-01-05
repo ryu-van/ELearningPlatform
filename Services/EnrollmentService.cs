@@ -55,7 +55,7 @@ namespace E_learning_platform.Services
             return _mapper.Map<IEnumerable<EnrollmentResponse>>(enrollments);
         }
 
-        public async Task<PagedResponse<EnrollmentResponse>> GetPagedEnrollmentsAsync(string keyword, string status, int page, int pageSize)
+        public async Task<PagedResponse<EnrollmentResponse>> GetPagedEnrollmentsAsync(string? keyword, string? status, int page, int pageSize)
         {
             var pagedEnrollments = await _enrollmentRepository.GetPagedEnrollmentsAsync(keyword, status, page, pageSize);
             var enrollmentResponses = _mapper.Map<IEnumerable<EnrollmentResponse>>(pagedEnrollments.Data);

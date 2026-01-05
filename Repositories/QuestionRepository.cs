@@ -70,14 +70,14 @@ namespace E_learning_platform.Repositories
                 .ToListAsync();
         }
 
-        public async Task<PagedResponse<Question>> GetPagedQuestionsAsync(string keyword, bool? isActive, int page, int pageSize)
+        public async Task<PagedResponse<Question>> GetPagedQuestionsAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
             var query = _context.Questions
                 .Include(q => q.ExamSection)
                 .AsQueryable();
             if (!string.IsNullOrWhiteSpace(keyword))
             {
-                query = query.Where(q => EF.Functions.Like(q.Content!, $"%{keyword}%"));
+                query = query.Where(q => q.Content != null && q.Content.Contains(keyword));
             }
             if (isActive.HasValue)
             {

@@ -5,7 +5,7 @@ namespace E_learning_platform.Services
 {
     public interface IQuestionService
     {
-        Task<PagedResponse<QuestionResponse>> GetPagedQuestionsAsync(string keyword, bool? isActive, int page, int pageSize);
+        Task<PagedResponse<QuestionResponse>> GetPagedQuestionsAsync(string? keyword, bool? isActive, int page, int pageSize);
         Task<IEnumerable<QuestionResponse>> GetQuestionsBySectionIdAsync(long sectionId);
         Task<QuestionResponse> GetQuestionByIdAsync(long questionId);
         Task<QuestionResponse> CreateQuestionAsync(QuestionRequest request);

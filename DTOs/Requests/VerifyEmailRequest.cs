@@ -5,9 +5,9 @@ namespace E_learning_platform.DTOs.Requests
     {
         [Required]
         [EmailAddress]
-        public string Email { get; set; }
+        public string Email { get; set; } = null!;
 
         [Required]
-        public string Token { get; set; }
+        public string Token { get; set; } = null!;
     }
 }

@@ -84,7 +84,7 @@ namespace E_learning_platform.Repositories
                 .ToListAsync();
         }
 
-        public async Task<PagedResponse<Chapter>> GetPagedChaptersAsync(string keyword, bool? isActive, int page, int pageSize)
+        public async Task<PagedResponse<Chapter>> GetPagedChaptersAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
             var query = _context.Chapters
                 .Include(c => c.Course)
@@ -92,7 +92,7 @@ namespace E_learning_platform.Repositories
 
             if (!string.IsNullOrWhiteSpace(keyword))
             {
-                query = query.Where(c => EF.Functions.Like(c.Title, $"%{keyword}%"));
+                query = query.Where(c => c.Title != null && c.Title.Contains(keyword));
             }
 
             if (isActive.HasValue)

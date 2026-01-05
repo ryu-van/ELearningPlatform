@@ -95,18 +95,18 @@ namespace E_learning_platform.Repositories
             return existingCourse;
         }
 
-        public async Task<PagedResponse<Course>> GetPagedCoursesAsync(string keyword, bool? isActive, int page, int pageSize)
+        public async Task<PagedResponse<Course>> GetPagedCoursesAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
             var query = _context.Courses
                 .Include(c => c.Teacher)
-                .Include(c => c.Language)
-                .Include(c => c.Level)
                 .Include(c => c.Branch)
+                .Include(c => c.Level)
+                .Include(c => c.Language)
                 .AsQueryable();
 
             if (!string.IsNullOrWhiteSpace(keyword))
             {
-                query = query.Where(c => EF.Functions.Like(c.Title, $"%{keyword}%") || EF.Functions.Like(c.Description, $"%{keyword}%"));
+                query = query.Where(c => (c.Title != null && c.Title.Contains(keyword)) || (c.Description != null && c.Description.Contains(keyword)));
             }
 
             if (isActive.HasValue)

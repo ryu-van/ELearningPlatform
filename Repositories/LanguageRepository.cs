@@ -42,13 +42,14 @@ namespace E_learning_platform.Repositories
             if (entity == null) throw new EntityNotFoundException("Language", new[] { id });
             return entity;
         }
-        public async Task<PagedResponse<Language>> GetPagedAsync(string keyword, bool? isActive, int page, int pageSize)
+        public async Task<PagedResponse<Language>> GetPagedAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
             var query = _context.Languages.AsQueryable();
+
             if (!string.IsNullOrWhiteSpace(keyword))
-            {
-                query = query.Where(x => EF.Functions.Like(x.Name, $"%{keyword}%"));
-            }
+             {
+                 query = query.Where(l => (l.Name != null && l.Name.Contains(keyword)) || (l.Code != null && l.Code.Contains(keyword)));
+             }
             if (isActive.HasValue)
             {
                 query = query.Where(x => x.IsActive == isActive.Value);

@@ -6,7 +6,7 @@ namespace E_learning_platform.Repositories
 {
     public interface IVideoRepository
     {
-        Task<PagedResponse<Video>> GetPagedVideosAsync(string keyword, bool? isActive, int page, int pageSize);
+        Task<PagedResponse<Video>> GetPagedVideosAsync(string? keyword, bool? isActive, int page, int pageSize);
         Task<IEnumerable<Video>> GetVideosByLessonIdAsync(long lessonId);
         Task<Video> GetVideoByIdAsync(long videoId);
         Task<Video> CreateVideoAsync(VideoRequest request);

@@ -5,7 +5,7 @@ namespace E_learning_platform.DTOs.Requests
     public class ExamRequest
     {
         [Required]
-        public string Title { get; set; }
+        public string Title { get; set; } = string.Empty;
 
         public string? Description { get; set; }
 

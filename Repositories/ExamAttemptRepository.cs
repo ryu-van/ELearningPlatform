@@ -86,5 +86,45 @@ namespace E_learning_platform.Repositories
             if (!points.Any()) return 0;
             return points.Sum(p => p);
         }
+
+        public async Task<bool> GradeAnswerAsync(long attemptId, long questionId, decimal score, bool isCorrect, long graderId)
+        {
+            var answer = await _context.UserAnswers
+                .FirstOrDefaultAsync(a => a.AttemptId == attemptId && a.QuestionId == questionId);
+            
+            if (answer == null) return false;
+
+            answer.Score = score;
+            answer.IsCorrect = isCorrect;
+            answer.GradedBy = graderId;
+            answer.GradedAt = DateTime.UtcNow;
+            
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<bool> UpdateAttemptTotalScoreAsync(long attemptId)
+        {
+            var attempt = await _context.ExamAttempts
+                .Include(a => a.Exam)
+                .FirstOrDefaultAsync(a => a.Id == attemptId);
+            
+            if (attempt == null) return false;
+
+            var answers = await _context.UserAnswers
+                .Where(a => a.AttemptId == attemptId)
+                .ToListAsync();
+
+            var totalScore = answers.Sum(a => a.Score ?? 0);
+            
+            // Recalculate pass/fail status
+            var isPassed = attempt.MaxScore > 0 && totalScore >= attempt.MaxScore * (attempt.Exam?.PassingScore ?? 0) / (attempt.Exam?.TotalMarks ?? attempt.MaxScore);
+            
+            attempt.TotalScore = totalScore;
+            attempt.IsPassed = isPassed;
+
+            await _context.SaveChangesAsync();
+            return true;
+        }
     }
 }

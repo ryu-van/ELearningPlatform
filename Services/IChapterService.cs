@@ -5,7 +5,7 @@ namespace E_learning_platform.Services
 {
     public interface IChapterService
     {
-        Task<PagedResponse<ChapterResponse>> GetPagedChaptersAsync(string keyword, bool? isActive, int page, int pageSize);
+        Task<PagedResponse<ChapterResponse>> GetPagedChaptersAsync(string? keyword, bool? isActive, int page, int pageSize);
         Task<IEnumerable<ChapterResponse>> GetChaptersByCourseIdAsync(long courseId);
         Task<ChapterResponse> GetChapterByIdAsync(long chapterId);
         Task<ChapterResponse> CreateChapterAsync(ChapterRequest request);

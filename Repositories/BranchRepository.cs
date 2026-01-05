@@ -78,17 +78,13 @@ namespace E_learning_platform.Repositories
 
         }
 
-        public async Task<PagedResponse<Branch>> GetPagedBranchAsync(
-                string keyword,
-                bool? isActive,
-                int page,
-                int pageSize)
+        public async Task<PagedResponse<Branch>> GetPageOfBranchAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
             var query = _context.Branches.AsQueryable();
 
             if (!string.IsNullOrWhiteSpace(keyword))
             {
-                query = query.Where(b => EF.Functions.Like(b.Name, $"%{keyword}%"));
+                query = query.Where(b => b.Name != null && b.Name.Contains(keyword));
             }
 
             if (isActive.HasValue)

@@ -5,10 +5,10 @@ namespace E_learning_platform.DTOs.Requests
     public class QuestionRequest
     {
         [Required]
-        public string Type { get; set; }
+        public string Type { get; set; } = null!;
 
         [Required]
-        public string Content { get; set; }
+        public string Content { get; set; } = null!;
 
         public string? Explanation { get; set; }
 

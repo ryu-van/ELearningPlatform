@@ -11,7 +11,7 @@ namespace E_learning_platform.Repositories
         {
             _context = context;
         }
-        public async Task<PagedResponse<User>> GetPagedUsersAsync(string keyword, bool? isActive, int page, int pageSize)
+        public async Task<PagedResponse<User>> GetPagedUsersAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
             var query = _context.Users.AsNoTracking().Include(u => u.Role).AsQueryable();
             if (!string.IsNullOrWhiteSpace(keyword))

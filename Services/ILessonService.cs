@@ -5,7 +5,7 @@ namespace E_learning_platform.Services
 {
     public interface ILessonService
     {
-        Task<PagedResponse<LessonResponse>> GetPagedLessonsAsync(string keyword, bool? isActive, int page, int pageSize);
+        Task<PagedResponse<LessonResponse>> GetPagedLessonsAsync(string? keyword, bool? isActive, int page, int pageSize);
         Task<IEnumerable<LessonResponse>> GetLessonsByChapterIdAsync(long chapterId);
         Task<LessonResponse> GetLessonByIdAsync(long lessonId);
         Task<LessonResponse> CreateLessonAsync(LessonRequest request);

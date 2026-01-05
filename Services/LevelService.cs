@@ -31,7 +31,7 @@ namespace E_learning_platform.Services
             var entity = await _repo.GetByIdAsync(id);
             return _mapper.Map<LevelResponse>(entity);
         }
-        public async Task<PagedResponse<LevelResponse>> GetPagedAsync(string keyword, bool? isActive, int page, int pageSize)
+        public async Task<PagedResponse<LevelResponse>> GetPagedAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
             var paged = await _repo.GetPagedAsync(keyword, isActive, page, pageSize);
             var mapped = _mapper.Map<IEnumerable<LevelResponse>>(paged.Data);

@@ -10,10 +10,10 @@ namespace E_learning_platform.Mappings
         public MappingProfile() 
         {
             CreateMap<RolePermission,FeatureResponse>()
-                .ForMember(dest => dest.Id, opt => opt.MapFrom(sc => sc.Feature.Id))
-                .ForMember(dest => dest.Code, opt => opt.MapFrom(sc => sc.Feature.Code))
-                .ForMember(dest => dest.Name, opt => opt.MapFrom(sc => sc.Feature.Name))
-                .ForMember(dest => dest.Description, opt => opt.MapFrom(sc => sc.Feature.Description))
+                .ForMember(dest => dest.Id, opt => opt.MapFrom(sc => sc.Feature != null ? sc.Feature.Id : 0))
+                .ForMember(dest => dest.Code, opt => opt.MapFrom(sc => sc.Feature != null ? sc.Feature.Code : string.Empty))
+                .ForMember(dest => dest.Name, opt => opt.MapFrom(sc => sc.Feature != null ? sc.Feature.Name : string.Empty))
+                .ForMember(dest => dest.Description, opt => opt.MapFrom(sc => sc.Feature != null ? sc.Feature.Description : string.Empty))
                 .ForMember(dest => dest.IsEnabled, opt => opt.MapFrom(sc => sc.IsEnabled));
 
             CreateMap<Role, RoleResponse>()

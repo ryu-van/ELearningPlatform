@@ -5,7 +5,7 @@ namespace E_learning_platform.Repositories
 {
     public interface IEnrollmentRepository
     {
-        Task<PagedResponse<Enrollment>> GetPagedEnrollmentsAsync(string keyword, string status, int page, int pageSize);
+        Task<PagedResponse<Enrollment>> GetPagedEnrollmentsAsync(string? keyword, string? status, int page, int pageSize);
         Task<IEnumerable<Enrollment>> GetEnrollmentsByUserIdAsync(long userId);
         Task<IEnumerable<Enrollment>> GetEnrollmentsByCourseIdAsync(long courseId);
         Task<Enrollment?> GetEnrollmentByIdAsync(long id);

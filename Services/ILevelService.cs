@@ -4,7 +4,7 @@ namespace E_learning_platform.Services
 {
     public interface ILevelService
     {
-        Task<PagedResponse<LevelResponse>> GetPagedAsync(string keyword, bool? isActive, int page, int pageSize);
+        Task<PagedResponse<LevelResponse>> GetPagedAsync(string? keyword, bool? isActive, int page, int pageSize);
         Task<LevelResponse> GetByIdAsync(long id);
         Task<LevelResponse> CreateAsync(LevelRequest request);
         Task<LevelResponse> UpdateAsync(long id, LevelRequest request);

@@ -6,7 +6,7 @@ namespace E_learning_platform.DTOs.Requests
     public class VideoRequest
     {
         [Required]
-        public string Title { get; set; }
+        public string Title { get; set; } = null!;
 
         public string? Description { get; set; }
 

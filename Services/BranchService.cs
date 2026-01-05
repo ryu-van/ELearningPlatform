@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using E_learning_platform.DTOs.Requests;
 using E_learning_platform.DTOs.Responses;
 using E_learning_platform.Repositories;
@@ -38,9 +38,9 @@ namespace E_learning_platform.Services
             return mapper.Map<BranchResponse>(existingBranch);
         }
 
-        public async Task<PagedResponse<BranchResponse>> GetPageOfBranchAsync(string keyword, bool? isActive, int page, int pageSize)
+        public async Task<PagedResponse<BranchResponse>> GetPageOfBranchAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
-            var pageBranch = await branchRepository.GetPagedBranchAsync(keyword, isActive, page, pageSize);
+            var pageBranch = await branchRepository.GetPageOfBranchAsync(keyword, isActive, page, pageSize);
 
             var mappedData = mapper.Map<IEnumerable<BranchResponse>>(pageBranch.Data);
 

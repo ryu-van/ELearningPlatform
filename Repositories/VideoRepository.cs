@@ -97,7 +97,7 @@ namespace E_learning_platform.Repositories
                 .ToListAsync();
         }
 
-        public async Task<PagedResponse<Video>> GetPagedVideosAsync(string keyword, bool? isActive, int page, int pageSize)
+        public async Task<PagedResponse<Video>> GetPagedVideosAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
             var query = _context.Videos
                 .Include(v => v.Lesson)

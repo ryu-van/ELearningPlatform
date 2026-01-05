@@ -38,7 +38,7 @@ namespace E_learning_platform.Services
             return _mapper.Map<ExamResponse>(entity);
         }
 
-        public async Task<PagedResponse<ExamResponse>> GetPagedExamsAsync(string keyword, bool? isActive, int page, int pageSize)
+        public async Task<PagedResponse<ExamResponse>> GetPagedExamsAsync(string? keyword, bool? isActive, int page, int pageSize)
         {
             var paged = await _repo.GetPagedExamsAsync(keyword, isActive, page, pageSize);
             var mapped = _mapper.Map<IEnumerable<ExamResponse>>(paged.Data);

@@ -5,7 +5,7 @@ namespace E_learning_platform.Services
 {
     public interface ICourseService
     {
-        Task<PagedResponse<CourseResponse>> GetPagedCoursesAsync(string keyword, bool? isActive, int page, int pageSize);
+        Task<PagedResponse<CourseResponse>> GetPagedCoursesAsync(string? keyword, bool? isActive, int page, int pageSize);
         Task<CourseResponse> GetCourseByIdAsync(long courseId);
         Task<CourseResponse> CreateCourseAsync(CourseRequest request);
         Task<CourseResponse> UpdateCourseAsync(long courseId, CourseRequest request);

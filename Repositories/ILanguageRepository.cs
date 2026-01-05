@@ -5,7 +5,7 @@ namespace E_learning_platform.Repositories
 {
     public interface ILanguageRepository
     {
-        Task<PagedResponse<Language>> GetPagedAsync(string keyword, bool? isActive, int page, int pageSize);
+        Task<PagedResponse<Language>> GetPagedAsync(string? keyword, bool? isActive, int page, int pageSize);
         Task<Language> GetByIdAsync(long id);
         Task<Language> CreateAsync(LanguageRequest request);
         Task<Language> UpdateAsync(long id, LanguageRequest request);

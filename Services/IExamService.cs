@@ -5,7 +5,7 @@ namespace E_learning_platform.Services
 {
     public interface IExamService
     {
-        Task<PagedResponse<ExamResponse>> GetPagedExamsAsync(string keyword, bool? isActive, int page, int pageSize);
+        Task<PagedResponse<ExamResponse>> GetPagedExamsAsync(string? keyword, bool? isActive, int page, int pageSize);
         Task<ExamResponse> GetExamByIdAsync(long examId);
         Task<ExamResponse> CreateExamAsync(ExamRequest request);
         Task<ExamResponse> UpdateExamAsync(long examId, ExamRequest request);

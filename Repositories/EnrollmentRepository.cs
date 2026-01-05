@@ -64,7 +64,7 @@ namespace E_learning_platform.Repositories
                 .ToListAsync();
         }
 
-        public async Task<PagedResponse<Enrollment>> GetPagedEnrollmentsAsync(string keyword, string status, int page, int pageSize)
+        public async Task<PagedResponse<Enrollment>> GetPagedEnrollmentsAsync(string? keyword, string? status, int page, int pageSize)
         {
             var query = _context.Enrollments
                 .Include(e => e.User)
@@ -74,7 +74,7 @@ namespace E_learning_platform.Repositories
             if (!string.IsNullOrEmpty(keyword))
             {
                 query = query.Where(e => (e.User != null && e.User.FullName.Contains(keyword)) || 
-                                         (e.Course != null && e.Course.Title.Contains(keyword)));
+                                         (e.Course != null && e.Course.Title != null && e.Course.Title.Contains(keyword)));
             }
 
             if (!string.IsNullOrEmpty(status))
